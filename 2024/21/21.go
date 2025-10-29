@@ -2,9 +2,11 @@ package main
 
 import (
 	"bufio"
-	"day21/try1"
-	"day21/try2"
-	"day21/try3"
+	// "day21/try1"
+	// "day21/try2"
+	// "day21/try3"
+	// "day21/try4"
+	"day21/try5"
 	"fmt"
 	"os"
 )
@@ -31,7 +33,11 @@ func parseInput() []string {
 func main() {
 	num_codes := parseInput()
 
-	fmt.Println("complexity try 1:", try1.GetComplexity(num_codes, 1))
-	fmt.Println("complexity try 2:", try2.GetComplexity(num_codes, 1))
-	fmt.Println("complexity try 3:", try3.GetComplexity(num_codes, 2))
+	// fmt.Println("complexity try 1:", try1.GetComplexity(num_codes, 1))
+	// fmt.Println("complexity try 2:", try2.GetComplexity(num_codes, 1))
+	// fmt.Println("complexity try 3:", try3.GetComplexity(num_codes, 2))
+	// fmt.Println("complexity try 4:", try4.GetComplexity(num_codes, 2))
+
+	fmt.Println("part 1:", try5.GetComplexity(num_codes, 2))
+	fmt.Println("part 2:", try5.GetComplexity(num_codes, 25))
 }
